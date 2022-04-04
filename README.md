@@ -8,7 +8,7 @@ Ejemplo de aplicación de servidor UDP con microcontrolador (STM32+LWIP)
 
 # Software Requerido
 - STM32CubeIDE
-- Hercules (recomendado)
+- Hercules
 
 #  Montaje
 ![alt text](https://github.com/juagald1/Servidor-UDP/blob/main/UDP_Servidor/LAN8720_ETH.PNG)
