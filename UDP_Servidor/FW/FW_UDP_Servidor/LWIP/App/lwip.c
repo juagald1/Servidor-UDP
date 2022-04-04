@@ -54,7 +54,7 @@ uint8_t GATEWAY_ADDRESS[4];
 /**
   * LwIP initialization function
   */
-void MX_LWIP_Init(void)
+void LWIP_Init(void)
 {
   /* IP addresses initialization */
   IP_ADDRESS[0] = 172;
@@ -126,7 +126,7 @@ void MX_LWIP_Init(void)
  * Handle timeouts if LWIP_TIMERS is set and without RTOS
  * Handle the llink status if LWIP_NETIF_LINK_CALLBACK is set and without RTOS
  */
-void MX_LWIP_Process(void)
+void LWIP_Process(void)
 {
 /* USER CODE BEGIN 4_1 */
 /* USER CODE END 4_1 */

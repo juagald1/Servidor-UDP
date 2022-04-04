@@ -5,8 +5,8 @@
  *      Author: jugaldo
  */
 
-#include "string.h"
 #include "stm32f4xx_hal.h"
+#include "string.h"
 
 
 int Gestion_Datos_Servidor_UPD (int longitud, char* str)

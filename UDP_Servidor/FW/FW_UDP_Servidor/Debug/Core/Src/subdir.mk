@@ -5,7 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Src/Datos_Server.c \
+../Core/Src/Init_HW.c \
 ../Core/Src/Test_Servidor.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32f4xx_hal_msp.c \
@@ -16,7 +16,7 @@ C_SRCS += \
 ../Core/Src/udpServerRAW.c 
 
 OBJS += \
-./Core/Src/Datos_Server.o \
+./Core/Src/Init_HW.o \
 ./Core/Src/Test_Servidor.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32f4xx_hal_msp.o \
@@ -27,7 +27,7 @@ OBJS += \
 ./Core/Src/udpServerRAW.o 
 
 C_DEPS += \
-./Core/Src/Datos_Server.d \
+./Core/Src/Init_HW.d \
 ./Core/Src/Test_Servidor.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32f4xx_hal_msp.d \
@@ -45,7 +45,7 @@ Core/Src/%.o: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/Datos_Server.d ./Core/Src/Datos_Server.o ./Core/Src/Test_Servidor.d ./Core/Src/Test_Servidor.o ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/udpServerRAW.d ./Core/Src/udpServerRAW.o
+	-$(RM) ./Core/Src/Init_HW.d ./Core/Src/Init_HW.o ./Core/Src/Test_Servidor.d ./Core/Src/Test_Servidor.o ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/udpServerRAW.d ./Core/Src/udpServerRAW.o
 
 .PHONY: clean-Core-2f-Src
 

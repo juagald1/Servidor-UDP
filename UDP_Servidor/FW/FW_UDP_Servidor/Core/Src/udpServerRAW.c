@@ -84,7 +84,7 @@ void udp_receive_callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, const
 
 	int len = sprintf (buf,"%s", (char*)p->payload);			//Obtiene numero de bytes recibido
 
-	//INICIA APLICACION
+	//APLICACION
 
 	if(Gestion_Datos_Servidor_UPD(len, &buf)==1){				//Si la accion SI existe en el diccionario el servidor devuelve OK
 		 tx_buf[0] = 'O'; tx_buf[1] = 'K';
